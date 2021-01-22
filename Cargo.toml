@@ -1,0 +1,66 @@
+[package]
+name = "rust_rest_api"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[dependencies.env_logger]
+version = "^0.7.1"
+
+[dependencies.log]
+version = "^0.4.8"
+
+[dependencies.actix-rt]
+version = "^1.1.1"
+
+[dependencies.actix-web]
+version = "^3.0.0-alpha.3"
+default-features = false
+
+[dependencies.actix-multipart]
+version = "^0.3.0-alpha.1"
+
+[dependencies.failure]
+version = "^0.1.8"
+
+[dependencies.failure_derive]
+version = "^0.1.8"
+
+[dependencies.base64]
+version = "^0.12.3"
+
+[dependencies.bytes]
+version = "^0.5.5"
+
+[dependencies.reqwest]
+version = "^0.10.6"
+features = ["stream"]
+
+[dependencies.mime]
+version = "^0.3.16"
+
+[dependencies.tokio]
+version = "^0.2.21"
+features = ["blocking", "fs"]
+
+[dependencies.rand]
+version = "^0.7.3"
+
+[dependencies.serde]
+version = "^1.0.114"
+
+[dependencies.opencv]
+version = "^0.43.1"
+default-features = false
+features = ["opencv-4", "buildtime-bindgen"]
+
+[dependencies.serde_json]
+version = "^1.0.56"
+
+[dependencies.tree_magic]
+version = "^0.2.3"
